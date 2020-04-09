@@ -1,18 +1,14 @@
 
 
-
 <body class="fix-header fix-sidebar card-no-border">
-
 
 <div id="main-wrapper">
 
 <div style="max-width: 800px; margin: 0 auto;">
         <div class="scroll-sidebar">
 
-
             <nav class="sidebar-nav stickyside" style="active none;">
                 <ul id="sidebarnav">
-                   
 
                     <li><a class="waves-effect waves-dark" href="#accordion-content1"
                            aria-expanded="false">Welcome to DroidApple.com Terms and Policies</a>
@@ -26,7 +22,7 @@
                     <li><a class="waves-effect waves-dark" href="#accordion-content4"
                            aria-expanded="false">  Content</a>
                     </li>
-                   
+                  
                   
                     <li><a class="waves-effect waves-dark" href="#accordion-content7" aria-expanded="false">Our
                             Warranties and Disclaimers</a>
@@ -68,7 +64,7 @@
                         <h1>Terms of Service</h1>
                         <hr>
                         <div id="accordion-content1">
-                            <h3 class="accordion-toggle">Welcome to DroidApple &#9662</h3>
+                            <h3 class="accordion-toggle">Welcome to DroidApple </h3>
 
                             <p>
 
@@ -84,7 +80,7 @@
                         </div>
 
                         <div id="accordion-content2">
-                            <h3 class="accordion-toggle">Using &#9662</h3>
+                            <h3 class="accordion-toggle">Using </h3>
                             <p>
 
 
@@ -103,7 +99,7 @@
  
 
                             <div id="accordion-content4">
-                                <h3 class="accordion-toggle"> Content &#9662</h3>
+                                <h3 class="accordion-toggle"> Content </h3>
                                 <p>
 
                                     We own all the contents that we have put on  our GAMES.
@@ -116,7 +112,7 @@
 
                           
                             <div id="accordion-content7">
-                                <h3 class="accordion-toggle"> Our Warranties and Disclaimers &#9662</h3>
+                                <h3 class="accordion-toggle"> Our Warranties and Disclaimers </h3>
 
                                 <p>
 
@@ -131,7 +127,7 @@
                                 </p>
                             </div>
                             <div id="accordion-content8">
-                                <h3 class="accordion-toggle"> Liability &#9662</h3>
+                                <h3 class="accordion-toggle"> Liability </h3>
 
                                 <p>
 
@@ -145,7 +141,7 @@
                                 </p>
                             </div>
                             <div id="accordion-content9">
-                                <h3 class="accordion-toggle"> About these Terms &#9662</h3>
+                                <h3 class="accordion-toggle"> About these Terms </h3>
 
                                 <p>
 
@@ -167,7 +163,7 @@
                             
 
                             <div id="accordion-content11">
-                                <h3 class="accordion-toggle"> Binding Agreement &#9662</h3>
+                                <h3 class="accordion-toggle"> Binding Agreement </h3>
 
                                 <p>
 
@@ -183,7 +179,7 @@
                                 <h1>Privacy Policy</h1>
                                 <hr>
                                 <h3 class="accordion-toggle"> Welcome to the Privacy Policy
-                                    &#9662</h3>
+                                    </h3>
                                 <p>
 
                                     When you use our GAMES, you trust us with your information.
@@ -221,7 +217,7 @@ Those may collect and process personal data such as device identifiers, location
                                 <h3>DroidApple, We, Us:</h3>
 
                                 <p>
-                                    Refers to owner <a href="https://droidapple.github.io">DroidApple</a><br>
+                                    Refers to owner <a href="http://droidapple.com">DroidApple</a><br>
                                     The web site and the Android mobile Apps and Games.
 
                                 </p>
@@ -274,8 +270,17 @@ Those may collect and process personal data such as device identifiers, location
                     </div>
                 </div>
             </div>
-           
+            <script>
+                // This is for the sticky sidebar
+                $(".stickyside").stick_in_parent({
+                    offset_top: 100
+                });
+                $('.stickyside a').click(function() {
+                    $('html, body').animate({
+                        scrollTop: $($(this).attr('href')).offset().top - 100
+                    }, 500);
+                    return false;
+                });
 
-</body>
 
-</html>
+            </script>
